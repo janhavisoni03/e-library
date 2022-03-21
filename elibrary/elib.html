@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library</title>
+  <link rel="stylesheet" href="elib.css">
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-----navigation bar-->
+  <div class="navigation">
+    <nav class="navigation">
+      <ul class="navUl">
+        <li id="navLi">e-Library</li>
+      </ul>
+      <div id="loginDiv">
+        <ul class="navUl">
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Register</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!---name of library -->
+  <div>
+    <h2 id="name">e-Library</h2>
+  </div>
+
+  <!----image slider start--->
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <img src="lib.jpg" style="width:98.8vw; height: 35vw">
+      <div class="form-container">
+        <label for="search">
+          <input type="text" placeholder="search books by name or author name">
+        </label>
+        <button type="submit"><i class="fa fa-search"></i></button>
+
+      </div>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="student.jpg" style="width:98.8vw; height: 35vw">
+      <div class="form-container">
+        <label for="search">
+          <input type="text" placeholder="search books by name or author name">
+        </label>
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </div>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="lib1.jpg" style="width:98.8vw; height: 35vw">
+      <div class="form-container">
+        <label for="search">
+          <input type="text" placeholder="search books by name or author name">
+        </label>
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </div>
+    </div>
+    <div class="mySlides fade">
+      <img src="student1.jpg" style="width: 98.8vw; height: 35vw">
+      <div class="form-container">
+        <label for="search">
+          <input type="text" placeholder="search books by name or author name">
+        </label>
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </div>
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+  <div class="cards-outer">
+    <!--category-->
+    <div class="category">
+      <h2>Category</h2>
+    </div>
+
+    <!--category title-->
+    <div class="card-border">
+      <div class="category-cards">
+        <div class="card">
+          <i style='font-size:2vw; color: white; margin: 1vw 1vw 1vw 1vw' class='fas'>&#xf5da;</i>
+          <h4><a href= "school.html">School</a></h4>
+        </div>
+        <div class="card">
+          <i style='font-size:2vw; color: white; margin: 1vw 1vw 1vw 1vw' class='fas'>&#xf7d9;</i>
+          <h4><a href= "engineering/engineering.html">Engineering</a></h4>
+        </div>
+        <div class="card">
+          <i style='font-size:2vw; color: white; margin: 1vw 1vw 1vw 1vw' class='fas'>&#xf07a;</i>
+          <h4><a href= "humanities.html">Humanities</a></h4>
+        </div>
+        <div class="card">
+          <i style='font-size:2vw; color: white; margin: 1vw 1vw 1vw 1vw' class='fas'>&#xf19d;</i>
+          <h4><a href= "law.html">Law</a></h4>
+        </div>
+      </div>
+
+      <div class="category-cards">
+        <div class="card">
+          <span style='font-size:2vw; color: white ; margin: 1vw 1vw 1vw 1vw' class='fas'>&#xf5d2;</span>
+          <h4><a href= "science.html">Science</a></h4>
+        </div>
+        <div class="card">
+          <i style='font-size:2vw; color: white; margin: 1vw 1vw 1vw 1vw' class='fas'>&#xf4fe;</i>
+          <h4><a href= "management.html">Management</a></h4>
+        </div>
+        <div class="card">
+          <i style='font-size:2vw; color: white; margin: 1vw 1vw 1vw 1vw' class='fa'>&#xf518;</i>
+          <h4><a href= "commerce.html">Commerce</a></h4>
+        </div>
+        <div class="card">
+          <span style="font-size:2vw; color: white; margin: 1vw 1vw 1vw 1vw" class="fa">&#xf02d;</span>
+          <h4><a href= "literature.html"> Literature</a></h4>
+        </div>
+      </div>
+    </div>
+
+    <!--header -->
+    <div class="header">
+      <div class="term">
+        <span><a href= "privacypolicy.html"> Privacy Policy</a></span>
+        <span><a href= "t&c.html"> Term & Conditions </a></span>
+      </div>
+      <div class="icon">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-youtube"></a>
+        <a href="#" class="fa fa-instagram"></a>
+      </div>
+    </div>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="elib.js"></script>
+    <script src="https://kit.fontawesome.com/c6ba7deab0.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
